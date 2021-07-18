@@ -1,0 +1,10 @@
+deb http://mirrors.aliyun.com/ubuntu/ version main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ version main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ version-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ version-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ version-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ version-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ version-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ version-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ version-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ version-proposed main restricted universe multiverse
