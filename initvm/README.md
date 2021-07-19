@@ -11,9 +11,7 @@ sudo passwd
 
 ## 免密配置
 ```
-1.sudo sh shells/no_passwd_sudoers.sh
-2.重启
-
+sudo sh shells/no_passwd_sudoers.sh
 # 若出现错误,使用如下指令修改
 pkexec visudo
 ```
