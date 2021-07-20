@@ -15,3 +15,13 @@ sudo groupadd docker
 sudo gpasswd -a `who | awk '{print $1}' | awk 'NR==1'` docker
 sudo service docker restart
 newgrp - docker
+
+echo "-------docker镜像加速"
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://6qz5kc5w.mirror.aliyuncs.com"]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker

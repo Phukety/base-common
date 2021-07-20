@@ -9,6 +9,12 @@
 sudo passwd
 ```
 
+## 配置HostName
+```
+# 设置主机名
+sudo hostnamectl set-hostname master
+```
+
 ## 免密配置
 ```
 1.sudo sh shells/no_passwd_sudoers.sh
@@ -23,7 +29,17 @@ pkexec visudo
 sudo sh shells/switch_ali_sources.sh
 ```
 
-## docker安装
+## docker
 ```
+// 安装
 sh shells/install_docker.sh
+
+// 卸载
+sh shells/uninstall_docker.sh
+```
+
+## k8s
+```
+// 安装
+sh shells/install_k8s.sh
 ```
