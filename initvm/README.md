@@ -15,7 +15,7 @@ sudo passwd
 sudo hostnamectl set-hostname master
 ```
 
-## 免密配置
+## 免密sudo配置
 ```
 sudo sh shells/no_passwd_sudoers.sh
 # 若出现错误,使用如下指令修改
