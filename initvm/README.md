@@ -27,17 +27,38 @@ pkexec visudo
 sudo sh shells/switch_ali_sources.sh
 ```
 
-## docker
+## **docker**
+#### 安装
 ```
-// 安装
 sh shells/install_docker.sh
-
-// 卸载
+```
+#### 卸载
+```
 sh shells/uninstall_docker.sh
 ```
 
-## k8s
+## **k8s**
+
+#### 安装
 ```
-// 安装
 sh shells/install_k8s.sh
+```
+
+#### 初始化集群
+```
+sudo kubeadm init --pod-network-cidr=10.244.0.0/16
+```
+
+#### 获取/找回token
+```
+Kubeadm token list
+或
+openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
+```
+
+#### 普通用户可执行
+```
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
